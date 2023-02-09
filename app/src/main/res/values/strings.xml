@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Aslan_M3_HW_1</string>
+    <string name="str_top">Intents</string>
+    <string name="et_email">Add your email</string>
+    <string name="et_subject">Add your subject</string>
+    <string name="et_massage">Add your massage</string>
+    <string name="btn_text">send</string>
+</resources>
