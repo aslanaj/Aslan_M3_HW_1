@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText etEmail;
     private EditText etSubject;
     private EditText etMassage;
-    static  final String KEY_FOR_OPEN_EMAIL = "strings";
+    static  final String KEY_FOR_OPEN_EMAIL = "Send mail";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -47,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, message);
 
         intent.setType("email/*");
+        intent.setPackage("com.google.android.gm");
+        // Добавил пакет Gmail для принудительного открытия приложения Gmail.
 
         startActivity(Intent.createChooser(intent, KEY_FOR_OPEN_EMAIL));
     }
